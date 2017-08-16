@@ -15,5 +15,21 @@ from math import ceil,floor
 
 """
 
-from math import ceil, floor
+"""
+import math
+
+num = int(input("Digite um número: "))
+raiz = math.sqrt(num)
+print("A raiz de {} é igual a {}".format(num,math.ceil(raiz)))
+"""
+
+"""
+from math import ceil, sqrt
+
+num = int(input("Digite um número: "))
+raiz = sqrt(num)
+print("A raiz de {} é igual a {}".format(num,ceil(raiz)))
+"""
+
+
 
