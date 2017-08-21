@@ -9,6 +9,7 @@ a2=input("Digite o nome de outro aluno: ")
 a3=input("Digite o nome de outro aluno: ")
 a4=input("Digite o nome de outro aluno: ")
 
-alunos=(a1,a2,a3,a4)
-
-print("A ordem de apresentação é {}".format(shuffle(alunos)))
+alunos=[a1,a2,a3,a4]
+#print(alunos)
+shuffle(alunos)
+print("A ordem de apresentação é {}".format(alunos))

@@ -1,0 +1,43 @@
+"""
+Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.
+Ex:
+Digite um número: 1834
+Unidade: 4
+Dezena: 3
+Centena: 8
+Milhar: 1
+"""
+
+""" My version
+n = input("Digite um número: ")
+#num = int("Unidade: {:0>4}".format(n))
+#print(type(num))
+ln = len(n)
+print("Unidade: {}.".format(n[ln-1]))
+print("Dezena: {}.".format(n[ln-2]))
+print("Centena: {}.".format(n[ln-3]))
+print("Milhar: {}.".format(n[ln-4]))
+"""
+
+"""Guanabara first option (simplified)"""
+"""
+num = int(input("Digite um número: "))
+n = str(num)
+print("Analisando o número {}".format(num))
+print("Unidade: {}".format(n[3]))
+print("Dezena: {}".format(n[2]))
+print("Centena: {}".format(n[1]))
+print("Milhar: {}".format(n[0]))
+"""
+"""Guanabara second option (mathematical)"""
+num = int(input("Digite um número: "))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print("Analisando o número {}".format(num))
+print("Unidade: {}".format(u))
+print("Dezena: {}".format(d))
+print("Centena: {}".format(c))
+print("Milhar: {}".format(m))
+
