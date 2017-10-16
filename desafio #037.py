@@ -8,14 +8,15 @@ Escreva um programa que leia um número inteiro (em decimal) e peça para o usu�
 3 para hexadecimal
 """
 
+"""
 num = int(input("Digite um número: "))
 
-opc = int(input("""Selecione uma das base de conversão desejada: 
+opc = int(input(\"""Selecione uma das base de conversão desejada: 
 
                     1 => binário
                     2 => octal
                     3 => hexadecimal
-                    digite: """))
+                    digite: \"""))
 
 if opc == 1:
     base = 2
@@ -49,3 +50,23 @@ elif opc == 3:
     print("\nO valor {} em binário é ".format(num), *rest, sep='')
 else:
     print("\n\033[31mOpção inválida\033[m")
+"""
+
+## Guanabara
+
+num = int(input("Digite um número inteiro: "))
+print('''Escolha uma das bases para conversão:
+[ 1 ] converter para BINÁRIO
+[ 2 ] converter para OCTAL
+[ 3 ] converter para HEXADECIMAL''')
+opcao = int(input('\nSua opção: '))
+print('')
+
+if opcao == 1:
+    print('{} convertido para binário é igual a {}'.format(num, bin(num)[2:]))
+elif opcao == 2:
+    print('{} convertido para octal é igual a {}'.format(num, oct(num)[2:]))
+elif opcao == 3:
+    print('{} convertido para hexadecimal é igual a {}'.format(num, hex(num)[2:]))
+else:
+    print('Opção inválida. Favor selecionar uma das opções disponíveis.')
