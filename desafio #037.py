@@ -55,18 +55,25 @@ else:
 ## Guanabara
 
 num = int(input("Digite um número inteiro: "))
-print('''Escolha uma das bases para conversão:
-[ 1 ] converter para BINÁRIO
-[ 2 ] converter para OCTAL
-[ 3 ] converter para HEXADECIMAL''')
-opcao = int(input('\nSua opção: '))
-print('')
 
-if opcao == 1:
-    print('{} convertido para binário é igual a {}'.format(num, bin(num)[2:]))
-elif opcao == 2:
-    print('{} convertido para octal é igual a {}'.format(num, oct(num)[2:]))
-elif opcao == 3:
-    print('{} convertido para hexadecimal é igual a {}'.format(num, hex(num)[2:]))
-else:
-    print('Opção inválida. Favor selecionar uma das opções disponíveis.')
+while True:
+    print('''Escolha uma das bases para conversão:
+    [ 1 ] converter para BINÁRIO
+    [ 2 ] converter para OCTAL
+    [ 3 ] converter para HEXADECIMAL''')
+    opcao = int(input('\nSua opção: '))
+    print('')
+
+
+    if opcao == 1:
+        print('{} convertido para binário é igual a \033[34m{}\033[m'.format(num, bin(num)[2:]))
+        break
+    elif opcao == 2:
+        print('{} convertido para octal é igual a \033[34m{}\033[m'.format(num, oct(num)[2:]))
+        break
+    elif opcao == 3:
+        print('{} convertido para hexadecimal é igual a \033[34m{}\033[m'.format(num, hex(num)[2:]))
+        break
+    else:
+        print('\033[31mOpção inválida. Favor selecionar uma das opções disponíveis.\033[m\n')
+
