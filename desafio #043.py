@@ -23,7 +23,7 @@ if IMC < 18.5:
 elif IMC < 25:
     print("Parabéns, você está no seu peso ideal.")
 elif IMC < 30:
-    print("Vpcê está acima do peso.")
+    print("Você está acima do peso.")
 elif IMC < 40:
     print("Cuidado, você está bem acima do peso, considerado obsidade.")
 else:
