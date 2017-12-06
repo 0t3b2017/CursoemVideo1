@@ -23,6 +23,3 @@ for n in range(num, 0, -1):
             break
 if teste == 0:
     print("Número {} \033[32mé\033[m primo".format(num))
-
-
-

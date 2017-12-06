@@ -9,7 +9,7 @@ import emoji
 for i in range(10, 0, -1):
     print(i)
     sleep(1)
-print(emoji.emojize(u':bomb:'))
+print(emoji.emojize(u'media:bomb:'))
 
 
 

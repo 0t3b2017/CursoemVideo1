@@ -16,6 +16,7 @@ frase = str(input("Digite uma frase: "))
 # Remove white spaces and make lower case
 f = frase.lower().strip().replace(' ','')
 
+"""
 f_len = len(f) - 1
 reverse_frase = ''
 n = f_len
@@ -25,9 +26,15 @@ while n >= 0:
     letter = f[n]
     reverse_frase = reverse_frase + letter
     n -= 1
+"""
+freverse = f[::-1]
 
 # Compare if it is a polindromo
-if f == reverse_frase:
-    print("\033[33mA frase '{}' é um políndromo\033[m".format(frase))
+if f == freverse:
+    print("\033[33mA frase '{}' é um políndromo.\033[m".format(frase))
 else:
-    print("\033[31mA frase '{}' não é um políndromo\033[m".format(frase))
+    print("\033[31mA frase '{}' não é um políndromo.\033[m".format(frase))
+
+
+
+
